@@ -1,0 +1,1 @@
+nohup java -jar /workspace/springBoot/build/libs/springBoot-0.0.1-SNAPSHOT.jar &

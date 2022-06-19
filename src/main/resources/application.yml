@@ -1,9 +1,13 @@
 server:
-  port: 8080
+    port: 8080
 
 spring:
-  mvc:
-    view:
-      prefix: /WEB-INF/jsp/
-      suffix: .jsp
- 
+    mvc:
+        view:
+            prefix: /WEB-INF/jsp/
+            suffix: .jsp
+    devtools:
+        livereload:
+            enabled: true
+        restart:
+            enabled: true
