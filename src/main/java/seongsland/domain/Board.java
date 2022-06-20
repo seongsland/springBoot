@@ -1,4 +1,4 @@
-package seongs.domain;
+package seongsland.domain;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;

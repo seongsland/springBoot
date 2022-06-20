@@ -1,4 +1,4 @@
-package seongs.controller;
+package seongsland.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import seongs.domain.User;
-import seongs.service.BoardService;
+import seongsland.domain.User;
+import seongsland.service.BoardService;
 
 @Controller
 @RequestMapping("/board")

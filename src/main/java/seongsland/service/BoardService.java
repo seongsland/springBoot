@@ -1,4 +1,4 @@
-package seongs.service;
+package seongsland.service;
 
 import org.springframework.stereotype.Service;
 

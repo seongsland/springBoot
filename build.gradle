@@ -4,9 +4,10 @@ plugins {
 	id 'java'
 }
 
-group = 'seongs'
+group = 'seongsland'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '1.8'
+apply plugin: 'war'
 
 configurations {
 	compileOnly {
@@ -27,8 +28,9 @@ dependencies {
 	annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
 	annotationProcessor 'org.projectlombok:lombok'
 	//testImplementation 'org.springframework.boot:spring-boot-starter-test'
-	implementation ('javax.servlet:jstl')
-	implementation ('org.apache.tomcat.embed:tomcat-embed-jasper')
+	implementation 'javax.servlet:jstl'
+	implementation 'org.apache.tomcat.embed:tomcat-embed-jasper'
+	providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
 }
 
 tasks.named('test') {
