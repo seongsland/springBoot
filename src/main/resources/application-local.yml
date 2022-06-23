@@ -1,12 +1,12 @@
 spring:
-	datasource:
-		url: jdbc:mysql://52.79.112.41:51670/seongsland?characterEncoding=utf8
-		username: seongsland
-		password: seongs1234
-		driver-class-name: com.mysql.cj.jdbc.Driver
+    datasource:
+        url: jdbc:mysql://52.79.112.41:51670/seongsland?characterEncoding=utf8
+        username: seongsland
+        password: seongs1234
+        driver-class-name: com.mysql.cj.jdbc.Driver
 
-	devtools:
-		livereload:
-			enabled: true
-		restart:
-			enabled: true
+    devtools:
+        livereload:
+            enabled: true
+        restart:
+            enabled: true

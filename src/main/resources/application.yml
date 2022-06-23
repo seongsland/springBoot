@@ -1,27 +1,27 @@
 server:
-	port: 8080
-	servlet:
-		jsp:
-			init-parameters:
-				development: true
-		session:
-			timeout: 7200
-	error:
-		whitelabel:
-			enabled: false
-		include-stacktrace: always
+    port: 8080
+    servlet:
+        jsp:
+            init-parameters:
+                development: true
+        session:
+            timeout: 7200
+    error:
+        whitelabel:
+            enabled: false
+        include-stacktrace: always
       
 spring:
-	mvc:
-		view:
-			prefix: /WEB-INF/jsp/
-			suffix: .jsp
-	servlet:
-		multipart:
-			max-file-size: 100MB
-			max-request-size: 100MB
-			enabled: true
+    mvc:
+        view:
+            prefix: /WEB-INF/jsp/
+            suffix: .jsp
+    servlet:
+        multipart:
+            max-file-size: 100MB
+            max-request-size: 100MB
+            enabled: true
 mybatis:
-	type-aliases-package: seongsland.domain
-	mapper-locations: classpath:sqlmap/mapper/**/*.xml
+    type-aliases-package: seongsland.domain
+    mapper-locations: classpath:sqlmap/mapper/**/*.xml
 
