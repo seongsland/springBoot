@@ -9,6 +9,7 @@ server:
     error:
         whitelabel:
             enabled: false
+        include-stacktrace: always
       
 spring:
     mvc:
@@ -20,14 +21,7 @@ spring:
             max-file-size: 100MB
             max-request-size: 100MB
             enabled: true
-    http:
-        encoding:
-            charset: UTF-8
-            enabled: true
-            force:  true 
-
 mybatis:
     type-aliases-package: seongsland.domain
-    configuration:
-        map-underscore-to-camel-case: true
+    mapper-locations: classpath:sqlmap/mapper/**/*.xml
 

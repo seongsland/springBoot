@@ -1,0 +1,13 @@
+spring:
+    db1:
+        datasource:
+            jdbcUrl: jdbc:mysql://52.79.112.41:51670/seongsland?characterEncoding=utf8
+            username: seongsland
+            password: seongs1234
+            driverClassName: com.mysql.cj.jdbc.Driver
+    db2:
+        datasource:
+            jdbcUrl: jdbc:mysql://52.79.112.41:51670/seongsland?characterEncoding=utf8
+            username: seongsland
+            password: seongs1234
+            driverClassName: com.mysql.cj.jdbc.Driver
