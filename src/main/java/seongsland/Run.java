@@ -14,7 +14,7 @@ public class Run extends SpringBootServletInitializer {
 	}
 	
 	@Override
-    protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-        return application.sources(Run.class);
-    }
+	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
+		return application.sources(Run.class);
+	}
 }

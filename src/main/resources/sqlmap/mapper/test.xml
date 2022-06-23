@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="test">
-    <select id="getTestList" parameterType="String" resultType="HashMap">
-        SELECT test_key, test_value
-          FROM test
-    </select>
+	<select id="getTestList" parameterType="String" resultType="HashMap">
+		SELECT test_key, test_value
+		  FROM test
+	</select>
     
-    <select id="getTest" parameterType="String" resultType="HashMap">
-        SELECT test_key, test_value
-          FROM test
-         WHERE test_key = #{test}
-    </select>
+	<select id="getTest" parameterType="String" resultType="HashMap">
+		SELECT test_key, test_value
+		  FROM test
+		 WHERE test_key = #{test}
+	</select>
     
-    <delete id="deleteTest" parameterType="String">
-    	DELETE FROM test WHERE test_key=#{test}
-    </delete>
+	<delete id="deleteTest" parameterType="String">
+		DELETE FROM test WHERE test_key=#{test}
+	</delete>
     
-    <delete id="deleteTestAll">
-    	DELETE FROM test
-    </delete>
+	<delete id="deleteTestAll">
+		DELETE FROM test
+	</delete>
     
-    <insert id="insertTest" parameterType="HashMap">
-    	INSERT INTO test (test_key, test_value)
-    	VALUES(#{testKey}, #{testValue})
-    </insert>
+	<insert id="insertTest" parameterType="HashMap">
+		INSERT INTO test (test_key, test_value)
+		VALUES(#{testKey}, #{testValue})
+	</insert>
 </mapper>
