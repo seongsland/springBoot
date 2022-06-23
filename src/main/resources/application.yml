@@ -1,13 +1,33 @@
 server:
     port: 8080
-
+    servlet:
+        jsp:
+            init-parameters:
+                development: true
+        session:
+            timeout: 7200
+    error:
+        whitelabel:
+            enabled: false
+      
 spring:
     mvc:
         view:
             prefix: /WEB-INF/jsp/
             suffix: .jsp
-    devtools:
-        livereload:
+    servlet:
+        multipart:
+            max-file-size: 100MB
+            max-request-size: 100MB
             enabled: true
-        restart:
+    http:
+        encoding:
+            charset: UTF-8
             enabled: true
+            force:  true 
+
+mybatis:
+    type-aliases-package: seongsland.domain
+    configuration:
+        map-underscore-to-camel-case: true
+

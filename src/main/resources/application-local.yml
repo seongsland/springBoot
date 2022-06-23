@@ -1,5 +1,12 @@
-property:
-    test:
-        name: property depth test
-propertyTest: property test
-propertyTestList: A,B,C
+spring:
+    datasource:
+        url: jdbc:mysql://localhost/seongsland?characterEncoding=utf8
+        username: root
+        password: admin1234
+        driver-class-name: com.mysql.cj.jdbc.Driver
+
+    devtools:
+        livereload:
+            enabled: true
+        restart:
+            enabled: true
