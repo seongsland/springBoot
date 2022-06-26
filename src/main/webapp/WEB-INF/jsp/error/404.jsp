@@ -10,7 +10,6 @@
 <body>
     <div class="errorPage">
         <span class="errorHead">404 Error!</span><br />
-        <p>status_code : <c:out value="${requestScope['javax.servlet.error.status_code']}"/></p>
         <p>servlet_name : <c:out value="${requestScope['javax.servlet.error.servlet_name']}"/></p>
         <p>exception : <c:out value="${requestScope['javax.servlet.error.exception']}"/></p>
         <p>servlet_name : <c:out value="${requestScope['javax.servlet.error.servlet_name']}"/></p>
